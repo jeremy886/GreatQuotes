@@ -34,9 +34,9 @@ post_message('albert', 'Insanity is repeating the same mistakes and expecting di
 post_message('albert', 'Experts are just trained dogs.')
 post_message('gsantayana', 'Those who cannot remember the past are condemened to repeat it.')
 
-follow('oscar', followed_user='Anaïs Nin')
-follow('oscar', followed_user='René Descartes')
-follow('oscar', followed_user='Confucius')
+follow('oscar', followed_user='anais')
+follow('oscar', followed_user='rene')
+follow('oscar', followed_user='kongzi')
 follow('kongzi', followed_user='albert')
 follow('kongzi', followed_user='jrr')
 follow('jrr', followed_user='albert')
@@ -45,11 +45,11 @@ follow('jrr', followed_user='albert')
 
 if __name__ == '__main__':
     pprint(posts)
-    pprint(user_posts['Anaïs Nin'])
+    pprint(user_posts['anais'])
 
-    follow('Oscar Wilde', followed_user='Anaïs Nin')
-    follow('Oscar Wilde', followed_user='René Descartes')
-    follow('Oscar Wilde', followed_user='Confucius')
+    follow('Oscar Wilde', followed_user='anais')
+    follow('Oscar Wilde', followed_user='rene')
+    follow('Oscar Wilde', followed_user='kongzi')
 
     pprint(following)
     pprint(followers)
